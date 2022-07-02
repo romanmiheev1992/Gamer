@@ -1,0 +1,83 @@
+
+.PriceSection {
+    margin-top: 10px;
+    width: 600px;
+    height: 80px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background: linear-gradient( -60deg, rgba(226,244,255,0.3) 5%,rgba(84, 107, 115, 0.3) 95%);
+    border-radius: 5px;
+}
+
+.PriceSection div:first-child {
+    color: var(--white);
+    align-self: center;
+    padding-left: 15px;
+}
+
+.PriceSectionBlock {
+    justify-self: end;
+    align-self: end;
+    max-width: 300px;
+    min-width: 250px;
+    height: 30px;
+    background: var(--black);
+    display: grid;
+    grid-template-rows: 30px;
+    grid-template-columns: minmax(100px, 350px) 100px;
+    justify-content: end;
+    outline: 3px solid var(--black);
+    transform: translateY(50%);
+    margin-right: 20px;
+}
+
+.PriceSectionBlock button {
+    justify-self: end;
+}
+
+.PriceSectionBlock div {
+    justify-self: center;
+    align-self: center;
+    color: var(--white);
+}
+
+.GameItemPriceSale {
+    display: grid;
+    grid-template-columns: 60px 60px 100px;
+}
+
+.GameItemPriceSale span:first-child {
+    background: var(--green-sale);
+    padding: 4px;
+    margin-left: 3px;
+    justify-self: start;
+    align-self: center;
+
+}
+
+.GameItemPriceSale span:nth-child(2) {
+    font-size: 12px;
+    text-decoration: line-through;
+    align-self: center;
+    justify-self: start;
+    color: rgba(255, 255, 255, 0.247);
+}
+
+.GameItemPriceSale span:nth-child(3) {
+    align-self: center;
+    justify-self: start;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    .PriceSection {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .PriceSection {
+        width: 100%;
+       
+    }
+}

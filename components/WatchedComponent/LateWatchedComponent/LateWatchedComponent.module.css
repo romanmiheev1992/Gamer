@@ -1,0 +1,163 @@
+.WatchedComponent {
+    width: 1000px;
+    margin: 170px auto;
+    color: var(--white)
+}
+
+.WatchedComponentBlock {
+    color: rgba(255, 255, 255, 0.267);
+}
+
+.GameSectionInfo {
+    width: 100%;
+    height: 100px;
+    background: var(--blue-dark);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 25px;
+    cursor: pointer;
+    position: relative;
+    font-size: 12px;
+}
+
+.GameSection img {
+    align-self: center;
+    margin-left: 6px;
+}
+.GameSection {
+   position: relative;
+}
+
+.GameSection div {
+    justify-self: start;
+    align-self: center;
+}
+
+
+.GameSectionInfo p {
+    align-self: center;
+    justify-self: end;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+
+.GameItemPriceSale {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.267);
+    align-self: end;
+    justify-self: end;
+    margin-right: 20px;
+}
+
+.GameItemPriceSale span:first-child {
+    background: var(--green-sale);
+    color: var(--white);
+   
+    padding: 3px;
+}
+
+.GameItemPriceSale span:nth-child(2) {
+    margin: 0 10px;
+    text-decoration: line-through;
+}
+
+
+.PriceSectionBlock {
+    position: absolute;
+    max-width: 310px;
+    min-width: 25px;
+    bottom: -15px;
+    right: 20px;
+    height: 30px;
+    background: var(--black);
+    display: grid;
+    grid-template-rows: 30px;
+    grid-template-columns: minmax(100px, 350px) 100px;
+    justify-content: end;
+    outline: 3px solid var(--black);
+    /* transform: translateY(160%); */
+  
+}
+
+.PriceSectionBlock button {
+    justify-self: end;
+    z-index: 100px;
+}
+
+.PriceSectionBlock div {
+    justify-self: center;
+    align-self: center;
+    color: var(--white);
+}
+
+.GameItemPriceSale {
+    display: grid;
+    grid-template-columns: 60px 60px 100px;
+}
+
+.GameItemPriceSale span:first-child {
+    background: var(--green-sale);
+    padding: 7px;
+    margin-left: 3px;
+    justify-self: center;
+    align-self: center;
+}
+
+.GameItemPriceSale span:nth-child(2) {
+    font-size: 11px;
+    text-decoration: line-through;
+    align-self: center;
+    justify-self: start;
+    color:rgba(255, 255, 255, 0.267)
+}
+
+.GameItemPriceSale span:nth-child(3) {
+    align-self: center;
+    justify-self: start;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .GameSectionInfo div {
+        margin-left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .GameSectionInfo {
+        width: 100%;
+        height: 160px;
+        background: var(--blue-dark);
+        display: grid;
+        grid-template-rows: 87px 25px 10px ;
+        grid-template-columns: 1fr;
+        margin-bottom: 25px;
+        cursor: pointer;
+        position: relative;
+        font-size: 12px;
+    }
+
+    .GameSectionInfo img {
+        margin-top: 10px;
+      justify-self: center;
+      align-self: center;
+    }
+
+    .GameSectionInfo div {
+        justify-self: center;
+    }
+
+    .GameSectionInfo div:nth-child(2){
+        color: var(--white);
+        margin-top: 4px;
+    }
+
+}
+
+
+

@@ -1,0 +1,26 @@
+.GameList {
+    color: var(--white);
+    width: 800px;
+    margin: 150px auto 0 auto;
+    display: grid;
+    justify-content: center;
+}
+
+.GameItem {
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.GameItem video {
+    height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .GameList {
+        color: var(--white);
+        width: 100%;
+        margin: 150px auto 0 auto;
+    }
+    
+}
+

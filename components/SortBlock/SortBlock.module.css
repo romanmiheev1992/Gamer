@@ -1,0 +1,262 @@
+.SortBlock {
+    width: 1000px;
+    
+    margin: 90px auto;
+    display: grid;
+    grid-template-areas: "label label photos"
+                         "games games photos"
+                         "games games photos"
+                         "games games photos"
+                         "games games photos"
+    ;
+    box-shadow: 11px 11px 10px 0px rgb(0 0 0 / 20%);
+
+}
+
+.SortBlockLabel {
+    width: 666px;
+    grid-area: label;
+}
+.SortBlockLabel ul {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--white);
+
+}
+
+.SortBlockLabel ul li {
+    /* background: red; */
+   text-align: center;
+   padding: 3px 0;
+   cursor: pointer;
+}
+
+.SortBlockLabel ul li:hover {
+  
+    background-image: linear-gradient(0.25turn, #0d1f38da, #0d1f38da);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.sortActive {
+    background: var(--gray-black);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.SortBlockGames {
+    background:var(--gray-black);
+    grid-area: games;
+    height: 660px;
+    width: 700px;
+    background-image: linear-gradient(0.25turn, #0d1f38da, #0d1f38da);
+}
+
+.SortBlockPhotos {
+    background:#c7d5e0;
+    grid-area: photos;
+    width: 333px;
+}
+
+.SortBlockPhotos img:nth-child(5) {
+    margin-bottom: 5px;
+}
+.GameBlock:first-child {
+    margin-top: 10px;
+}
+.GameBlock {
+    margin: 0px 0px 9px 10px;
+    height: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.041);
+    color: var(--white);
+    font-size: 12px;
+    cursor: pointer;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr 2fr;
+}
+
+.GameBlock:hover {
+    background:#c7d5e0;
+    color: var(--black);
+}
+
+.GameBlock:hover span:nth-child(2) {
+    color: black;
+}
+
+.GameBlock img{
+    height: 50px;
+}
+
+.GameText {
+    display: grid;
+    margin-left: 10px;
+    align-content: center;
+}
+
+.GameText span:nth-child(2) {
+    font-size: 10px;
+    color:rgba(255, 255, 255, 0.459);
+    margin-top: 4px;
+}
+
+.GamePrice {
+    justify-self: end;
+    align-self: center;
+}
+
+.GamePrice span {
+    margin-right: 10px;
+}
+
+.GamePrice div{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr 2fr;
+} 
+
+.GamePrice div span:first-child {
+    background: var(--green-sale);
+    padding: 0 3px;
+    justify-self: end;
+    color: var(--white)
+}
+
+.GamePrice div span:nth-child(2) {
+    text-decoration: line-through;
+    justify-self: end;
+    color: rgba(255, 255, 255, 0.219)
+ 
+
+}
+.GamePrice div span:last-child {
+    justify-self: end;
+} 
+
+.SortBlockPhotos {
+    display: grid;
+    width: 300px;
+}
+
+.SortBlockPhotos p {
+    margin-left: 15px;
+}
+
+.SortBlockPhotos img{
+    width: 265px;
+    justify-self: center;
+    align-self: center;
+}
+
+.SortBlockPhotos img:last-child{
+   display: none;
+}
+
+.SortBlockPhotos img:last-child {
+    margin-bottom: 15px;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .SortBlock {
+        width: 660px;
+    }
+
+    .SortBlockGames {
+        width: 400px;
+    }
+    
+    .GameBlock {
+        font-size: 10px;
+    }
+
+    .SortBlockGames {
+        width: 460px;
+        font-size: 10px;
+    }
+
+    .SortBlockLabel {
+        width: 400px;
+        grid-area: label;
+    }
+
+    .SortBlockPhotos {
+        width: 200px;
+        height: 100%;
+        font-size: 11px;
+        align-self: center;
+    }
+
+    .SortBlockPhotos img{
+        width: 180px;
+        justify-self: center;
+        align-self: end;
+    }
+
+    .SortBlockLabel ul {
+        font-size: 11px;
+    }
+
+    .SortBlockPhotos img:last-child{
+        display: block;
+     }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .SortBlock {
+        width:90%;
+    }
+    .SortBlockPhotos {
+        display: none;
+    }
+
+    .SortBlockGames {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .GameBlock {
+        font-size: 10px;
+        grid-template-columns: 1fr 2fr 1fr; 
+    }
+
+    .GamePrice div span:nth-child(2) {
+        color: rgba(255, 255, 255, 0.219)
+    }
+
+    .GamePrice div{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .SortBlock {
+        width:100%;
+    }
+    .GameBlock {
+        font-size: 10px;
+        grid-template-columns: 1fr 2fr 1fr; 
+    }
+
+    .GamePrice div span:nth-child(2) {
+        color: rgba(255, 255, 255, 0.219)
+    }
+
+    .GamePrice div{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+    }
+    
+}

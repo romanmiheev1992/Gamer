@@ -1,0 +1,38 @@
+.Slider {
+    width: 600px;
+    overflow: hidden;
+    grid-area: slider;
+}
+
+.Slider img {
+    height: 337px;
+    margin-right: 5px;
+    animation: imageAppearense .3s ease-in-out forwards;
+}
+
+.Slider video {
+    height: 337px;
+}
+
+@keyframes imageAppearense {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+@media screen and (max-width: 600px) {
+    .Slider {
+        width: 100%;
+        height: 229px;
+    }
+
+    .Slider img {
+        width: 100%;
+        height: auto
+    }
+
+    .Slider video {
+        width: 100%;
+        height: auto
+    }
+}

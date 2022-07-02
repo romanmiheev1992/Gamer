@@ -1,0 +1,33 @@
+.Form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    display: grid;
+    grid-template-rows: repeat(3, 60px);
+    justify-content: center;
+    align-content: center;
+}
+
+.Form input{
+    box-shadow: 8px 8px 8px 1px rgb(0 0 0 / 20%);
+}
+
+.Form button {
+    align-self: start;
+}
+
+.hide {
+    opacity: .5;
+}
+
+@media screen and (max-width: 600px) {
+   
+    .Form {
+        position: absolute;
+        top: 40% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+}

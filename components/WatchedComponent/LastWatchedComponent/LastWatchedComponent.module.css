@@ -1,0 +1,187 @@
+.LastWatchedComponent {
+    width: 100%;
+    height: 300px;
+    margin: 40px auto;
+    color: var(--white)
+}
+
+.LastWatchedComponent p:first-child {
+    font-size: 13px;
+    margin-left: 16px;
+}
+
+.LastWatchedComponentBlock {
+    height: 250px;
+    color: rgba(255, 255, 255, 0.267);
+    position: relative;
+}
+
+
+.watched {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.425) !important;
+}
+
+.GameSection {
+    width: 100%;
+    height: 250px;
+    background: var(--blue-dark);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.GameSection img {
+    align-self: center;
+    margin-left: 16px;
+}
+
+.GameSection div {
+    justify-self: start;
+    align-self: center;
+    display: grid;
+    color: var(--white);
+}
+
+.GameSection p {
+    align-self: center;
+    justify-self: start;
+    margin-right: 20px;
+    font-size: 12px;
+}
+
+
+.GameItemPriceSale {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.267);
+    align-self: end;
+    justify-self: end;
+    margin-right: 20px;
+}
+
+.GameItemPriceSale span:first-child {
+    background: var(--green-sale);
+    color: var(--white);
+   
+    padding: 3px;
+}
+
+.GameItemPriceSale span:nth-child(2) {
+    margin: 0 10px;
+    text-decoration: line-through;
+}
+
+
+
+.PriceSectionBlock {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    max-width: 300px;
+    min-width: 275px;
+    height: 30px;
+    background: var(--black);
+    display: grid;
+    grid-template-rows: 30px;
+    grid-template-columns: minmax(100px, 350px) 100px;
+    justify-content: end;
+    outline: 3px solid var(--black);
+    transform: translateY(150%);
+    margin-right: 20px;
+    
+}
+
+.PriceSectionBlock button {
+    justify-self: end;
+}
+
+.PriceSectionBlock div {
+    justify-self: center;
+    align-self: center;
+    color: var(--white);
+}
+
+.GameItemPriceSale {
+    display: grid;
+    grid-template-columns: 60px 60px 100px;
+}
+
+.GameItemPriceSale span:first-child {
+    background: var(--green-sale);
+    padding: 7px;
+    margin-left: 3px;
+    justify-self: end;
+    align-self: center;
+}
+
+.GameItemPriceSale span:nth-child(2) {
+    font-size: 11px;
+    text-decoration: line-through;
+    align-self: center;
+    justify-self: start;
+    color:rgba(255, 255, 255, 0.267)
+}
+
+.GameItemPriceSale span:nth-child(3) {
+    align-self: center;
+    justify-self: start;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .WatchedComponent {
+        width: 90%;
+    }
+
+    .GameSection div {
+        margin-left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    .GameSection {
+        grid-template-rows:repeat(2, 1fr);
+        grid-template-columns:  1fr;
+        
+    }
+
+    .GameSection img {
+        padding-left: 10px;
+        margin-left: 0;
+        padding-top: 10px;
+    }
+
+    .GameSection div {
+        background: var(--blue-dark);
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+
+    .GameSection div:first-child  {
+        padding-left: 10px;
+    }
+
+    .GameSection div:last-child {
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .GameSection img {
+        width: 350px;
+        padding-left: 10px;
+        margin-left: 0;
+        padding-top: 10px;
+    }
+}
+
+

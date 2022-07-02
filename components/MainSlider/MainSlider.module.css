@@ -1,0 +1,257 @@
+.MainSlider {
+    width: 1060px;
+    margin: 150px auto 60px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.MainSlider p {
+    margin-left: 30px;
+    color: var(--white)
+}
+
+.MainSliderPoster {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 30px 1fr 30px;
+}
+
+.MainSliderPoster button {
+    align-self: center;
+}
+
+.MainPosterBlock {
+    display: flex;
+    margin-bottom: 10px;
+    height: 353px;
+    -webkit-box-shadow: 11px 11px 10px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 11px 11px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 11px 11px 10px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.MainPoster img{
+    width: 616px;
+    height: 100%;
+    animation: imageAppearence .3s ease-in-out forwards;
+}
+
+.MainLabel {
+    background-image: url('https://store.cloudflare.steamstatic.com/public/images/v6/home/background_maincap_2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    width: 384px;
+}
+
+.MainLabelPrice span:first-child {
+    background: var(--green-sale);
+    padding: 0 5px;
+    margin-right: 7px;
+    color: #ffffff8f;
+    
+}
+
+.MainLabelPrice span:nth-child(2) {
+    text-decoration:line-through;
+    margin-right: 10px;
+}
+
+.MainLabel p{
+    margin-left: 20px;
+    color: var(--white);
+    align-self: center;
+}
+
+.MainLabelPrice {
+    justify-self: start;
+    align-self: end;
+}
+
+.MainLabelPrice p{
+    font-size: 12px;
+}
+
+.MainLabelPriceSale {
+    background: var(--black);
+    display: inline-block;
+    padding-right: 10px;
+}
+.MainLabelPrice p span:nth-child(2) {
+    color: rgba(255, 255, 255, 0.219)
+}
+
+.MainLabelPhotos {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.MainLabelPhotos img{
+    width: 100%;
+    border: 6px solid rgba(0, 0, 0, 0);
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.MainLabelPhotos img:hover {
+    opacity: 1;
+}
+
+@keyframes imageAppearence {
+    from {opacity: .7;}
+    to {opacity: 1;}
+}
+
+
+@media screen and (max-width: 1000px) {
+    
+    .MainSlider {
+        width: 720px;
+        margin: 150px auto 60px auto;
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+
+    .MainPosterBlock {
+        background: none;
+        box-shadow: none;
+    }
+
+    .MainPoster {
+        margin: 0 auto;
+    }
+
+    .MainPoster img {
+    -webkit-box-shadow: 11px 11px 10px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 11px 11px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 11px 11px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .MainLabel {
+            display: none;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    
+    .MainSlider {
+        width: 580px;
+        margin: 150px auto 60px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MainSlider p {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .MainPosterBlock {
+        width: 520px;
+    }
+
+    .MainPoster {
+        margin: 0 auto;
+        width: 480px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .MainPoster img {
+        width: 480px;
+    
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    
+    .MainSlider {
+        width: 480px;
+        margin: 150px auto 60px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MainSliderPoster {
+        width: 480px;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr ;
+        justify-content: center;
+    }
+
+    .MainSlider button {
+        display: none;
+    }
+
+    .MainPoster {
+        margin: 0 auto;
+        width: 480px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .MainPoster img {
+        width: 480px;
+    
+    } 
+
+}
+
+@media screen and (max-width: 500px) {
+    
+    .MainSlider {
+        width: 100%;
+        margin: 150px auto 60px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .MainSliderPoster {
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+        height: 280px;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr ;
+        justify-content: center;
+    }
+
+    .MainPosterBlock {
+        width: 100%;
+        height: 240px;
+        justify-self: center;
+    }
+
+    .MainSlider button {
+        display: none;
+    }
+
+    .MainPoster {
+        justify-self: center;
+        width: 100%;
+        height: 250px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .MainPoster img {
+        width: 100%;
+        justify-self: center;
+    
+    } 
+
+}

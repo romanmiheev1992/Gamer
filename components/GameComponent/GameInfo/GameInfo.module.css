@@ -1,0 +1,93 @@
+.GameInfo {
+    width: 300px;
+    margin-left: 0px;
+    color: rgba(255, 255, 255, 0.651);
+    grid-area: info;
+}
+
+.GameInfo img {
+    width: 300px;
+    grid-area: img;
+}
+
+.GameInfo div:first-child {
+    grid-area: description;
+}
+
+.Info p{
+    color: #67c1f5;
+    line-height: 12px;
+}
+
+.InfoBlock {
+    grid-area: setting;
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 100px 1fr;
+    grid-template-areas: "label info";
+}
+
+.InfoBlock div:first-child{
+    grid-area: label;
+}
+
+.InfoBlock div:last-child{
+    grid-area: info;
+}
+
+.GameInfo div {
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.InfoText p{
+    color: rgba(255, 255, 255, 0.274);
+    line-height: 12px;
+}
+
+@media screen and (max-width: 1000px) {
+    .GameInfo {
+        width: 100%;
+        display: grid;
+        grid-template-areas: "img description"
+                             "img setting"
+    }
+
+    .InfoText {
+        margin-left: -10px;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .GameInfo {
+        width: 100%;
+        display: grid;
+        grid-template-areas: "img img"
+                             "description description"
+                             "setting setting";
+        justify-content: center;
+    }
+
+    .GameInfo img {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .InfoText {
+        margin-left: -10px;
+    }
+
+    .InfoBlock {
+        justify-self: center;
+        display: none;
+    }
+
+    .GameInfoDescription {
+        width: 98%;
+        margin: 10px;
+    }
+
+   
+
+}

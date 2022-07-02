@@ -1,0 +1,73 @@
+.GameDescritption {
+    margin-top: 10px;
+    width: 600px;
+    min-height: 100px;
+    grid-area: description;
+    
+}
+.GameDescritption p:first-child {
+    padding-bottom: 4px;
+}
+
+.GameDescritption img {
+    width: 600px;
+}
+
+
+
+.GameDescritption p:nth-child(4) {
+    padding-bottom: 4px;
+
+}
+
+.SistemRequirements {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.SistemRequirements p {
+    font-size: 12px;
+    line-height: 15px;
+    border-bottom: none;
+    margin: 3px 0;
+    color:rgba(180, 180, 180, 0.918);
+}
+.SistemRequirements span {
+    font-size: 12px;
+    color:rgba(180, 180, 180, 0.288);
+    margin-right: 5px;
+}
+
+.SistemRequirements div {
+   display: flex;
+   flex-direction: column;
+}
+
+.GameHeader {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.096);
+    font-size: 16px;
+}
+
+.GameText {
+    font-size: 12px;
+    color: aqua;
+}
+
+
+@media screen and (max-width: 600px) {
+    .GameDescritption {
+        width: 100%;
+       
+    }
+
+    .GameDescritption img {
+        width: 100%;
+       
+    }
+
+    .GameDescritption p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

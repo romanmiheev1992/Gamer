@@ -1,0 +1,47 @@
+.SortSection {
+    width: 800px;
+    height: 30px;
+    -webkit-box-shadow: 8px 8px 8px 1px rgb(0 0 0 / 20%);
+    box-shadow: 8px 8px 8px 1px rgb(0 0 0 / 20%);
+    margin-bottom: 50px;
+    display: flex;
+    background-image: linear-gradient(0.25turn, #2a5085, var(--blue-dark)); 
+    font-size: 12px;
+}
+
+.SortSection div{
+    align-self: center;
+}
+
+.SortSection span {
+    align-self: center;
+    margin: 0 30px;
+}
+
+.SortSection select {
+    background:  #2a5085;
+    color: var(--white);
+    outline: none;
+    padding: 3px;
+    align-self: center;
+    margin-right: 20px;
+    padding: 3px;
+}
+
+.SortSection option {
+    background:  #2a5085;
+    color: var(--white);
+}
+
+@media screen and (max-width: 800px) {
+    .SortSection {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .SortSection {
+        width: 100%;
+    }
+}

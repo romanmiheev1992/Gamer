@@ -1,0 +1,44 @@
+.GameSetting {
+    width: 300px;
+    min-height: 155px;
+    grid-area: setting;
+    margin-left: 0px;
+    font-size: 11px;
+    margin-top: 5px;
+    background: var(--blue-dark);
+}
+
+.GameSetting svg {
+    fill: var(--white);
+    width: 25px;
+    height: 25px;
+    padding: 4px;
+    background: var(--black);
+}
+
+.GameSetting p {
+    height: 25px;
+    width: 100%;
+    background: var(--gray-black);
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 4px;
+}
+
+.GameSetting div {
+    display: flex;
+    margin: 1px 15px 0 15px;
+}
+
+.GameSetting div:first-child {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .GameSetting {
+        width: 100%;
+    }
+
+
+
+}

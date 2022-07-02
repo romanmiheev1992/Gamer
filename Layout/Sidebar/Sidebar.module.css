@@ -1,0 +1,38 @@
+.BlackBlock {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    transition: all .5s;
+    animation: BlackBlockAppear .2s ease-in-out forwards;
+    z-index: 50;
+}
+
+.Sidebar {
+    background: var(--black);
+    color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    -webkit-box-shadow: 11px 11px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 11px 11px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 11px 11px 8px 0px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+.MainList {
+    margin-top: 55px;
+}
+@keyframes BlackBlockAppear {
+    from {background: rgba(255, 255, 255, 0);}
+    to {background: rgba(0, 0, 0, 0.562);}
+}
+
+
+@media screen and (max-width: 500px) {
+    .Sidebar {
+        width: 100%;
+    }
+}

@@ -1,0 +1,79 @@
+.MenuHeaderComponent {
+    position: absolute;
+    top: 90px;
+    width: 1000px;
+    background-image: linear-gradient(0.25turn, #2a5085, var(--blue-dark));
+    -webkit-box-shadow: 8px 8px 8px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 8px 8px 8px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 8px 8px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    transition: all .3s ease-in-out;
+    z-index: 10;
+}
+
+.MenuHeaderComponent ul {
+    display: flex;
+}
+
+.MenuHeaderComponent ul li {
+    width: 180px;
+    padding: 10px 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.MenuHeaderComponent ul li:hover {
+    background-image: linear-gradient(0.50turn, #3c6caa,  #13396b);
+    color: var(--white);
+}
+
+.MenuItemsComponets{
+    position: absolute;
+    margin-left: -10px;
+    color: #fff;
+    top: 37px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    background-image: linear-gradient(0.25turn, #203d66b6, #244779);
+    -webkit-box-shadow: 8px 8px 8px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 8px 8px 8px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 8px 8px 1px rgba(0, 0, 0, 0.2);
+    animation: menuItemAppear .4s ease-in-out forwards ;
+}
+
+.headerHide {
+    top: 10px;
+}
+
+.headerShow {
+    top: 100px;
+}
+
+@keyframes menuItemAppear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+@media screen and (max-width: 1000px) {
+    .MenuHeaderComponent {
+        width: 70%;
+        padding: 9px;
+        justify-content: center;
+    }
+
+    .MenuHeaderComponent ul {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .MenuHeaderComponent {
+        width: 70%;
+        padding: 5px;
+        justify-content: center;
+    }
+}

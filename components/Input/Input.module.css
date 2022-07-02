@@ -1,0 +1,31 @@
+.Input {
+    display: grid;
+    position: relative;
+}
+
+.Input input {
+    width: 250px;
+    padding-left: 8px ;
+    height: 35px;
+    border: none;
+    outline: none;
+  
+}
+
+.Input input:focus {
+    outline: 2px solid #1a44c2;
+}
+
+.Input span {
+    color: rgb(252, 113, 113);
+    font-size: 11px;
+}
+
+.Input svg {
+    width: 23px;
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    cursor: pointer;
+}
+

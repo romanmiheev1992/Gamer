@@ -1,0 +1,59 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	color: var(--black);
+	background: var(--black-background);
+	font-family: "Noto Sans", sans-serif;
+
+}
+body::-webkit-scrollbar {
+	width: 10px;
+	
+	background: var(--black);
+}
+
+body::-webkit-scrollbar-track {
+	background: var(--black-background);
+	
+}
+
+body::-webkit-scrollbar-thumb  {
+	background: var(--blue-dark);
+	border-radius: 15px;
+	padding: 2px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--black: #171a21;
+	--white: white;
+	--blue-dark: #1b2838;
+	--black-background: #0E141B;
+	--green-sale: #4c6b22;
+	--gray-black: #2a475e;
+
+	--gray-light: #EBEBEB;
+	
+	--primary: #7653FC;
+	--primary-hover: #562ff5;
+	--red: #FC936D;
+	--green: #1DC37E;
+	--green-light: #C8F8E4;
+	--font-family: "Noto Sans", sans-serif;
+
+}

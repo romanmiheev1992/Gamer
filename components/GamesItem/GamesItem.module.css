@@ -1,0 +1,156 @@
+.GameItem {
+    min-height: 200px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 8px 8px 8px 1px rgb(0 0 0 / 20%);
+}
+
+.GameItem:last-child {
+    margin-bottom: 50px;
+}
+
+.GameItemImage {
+    width: 440px;
+    height: 220px;
+    overflow: hidden;
+    display: grid;
+    z-index: 10;
+}
+
+.GameItemImage img {
+    align-self: center;
+}
+
+.GameItem video {
+    height: 100%;
+    width: 100%;
+}
+
+.GameItemInfo {
+    background: var(--black);
+    width: 360px;
+    height: 215px;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 50px 50px 110px;
+}
+
+.GameItemInfo p {
+    margin-left: 15px;   
+}
+
+.GameItemInfo p:nth-child(2) {
+    font-size: 12px;
+}
+
+.GameItemPrice {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.267);
+    align-self: end;
+    justify-self: end;
+    margin-right: 20px;
+}
+
+.GameItemPriceSale {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.267);
+    align-self: end;
+    justify-self: end;
+    margin-right: 20px;
+}
+
+.GameItemPriceSale span:first-child {
+    background: var(--green-sale);
+    color: var(--white);
+   
+    padding: 3px;
+}
+
+.GameItemPriceSale span:nth-child(2) {
+    margin: 0 10px;
+    text-decoration: line-through;
+}
+
+.active {
+    animation: activeMode .3s ease-in-out forwards;
+    box-shadow: 18px 18px 18px 1px rgb(0 0 0 / 20%);
+}
+
+@keyframes activeMode {
+    from { transform: scale(1);}
+    to { transform: scale(1.05);}
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .GameItem {
+        width: 450px;
+        grid-template-rows:1fr 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .GameItemInfo {
+        z-index: 20;
+        width: 100%;
+        height: 50px;
+        grid-template-rows: 50px;
+        grid-template-columns: 150px 70px 200px;
+        margin-top: -10px;
+    }
+
+    .GameItemImage {
+        width: 450px;
+    }
+
+    .GameItemInfo p:first-child {
+        font-size: 12px;
+        align-self: center;
+    }
+    .GameItemInfo p:nth-child(2) {
+        font-size: 12px;
+        align-self: center;
+        color: rgba(255, 255, 255, 0.329);
+    }
+    .GameItemInfo p:last-child {
+        font-size: 12px;
+        align-self: center;
+        justify-self: end;
+    }
+    
+}
+
+@media screen and (max-width: 460px) {
+
+    .GameItem {
+        width: 100%;
+        grid-template-rows:1fr 30px;
+        grid-template-columns: 1fr;
+    }
+
+    .GameItemImage{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .GameItemImage img{
+        width: 100%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .GameItemInfo {
+        z-index: 20;
+        width: 100%;
+        height: 90px;
+        grid-template-rows: repeat(2, 20px) 30px;
+        grid-template-columns: 1fr;
+        margin-top: -10px;
+    }
+
+}
+

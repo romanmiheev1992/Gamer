@@ -1,0 +1,21 @@
+.MenuComponent li{
+    opacity: 0;
+    padding-left: 40px;
+    font-size: 14px;
+    border-bottom: none;
+    background: var(--blue-dark);
+    transform: translateX(-150px);
+    animation: itemAppear .4s ease-in-out forwards;
+    transition: all .3s;
+    color: rgba(255, 255, 255, 0.89);
+}
+.MenuComponent li:hover {
+    background-image: linear-gradient(0.50turn, #2b3d53, var(--blue-dark));
+    color: var(--white)
+}
+
+@keyframes itemAppear {
+    0% {opacity: 0; transform: translateX(-150px); }
+    100% {opacity: 1; transform: translateX(0);}
+}
+

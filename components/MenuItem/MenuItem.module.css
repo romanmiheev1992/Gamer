@@ -1,0 +1,66 @@
+.HeadComponent {
+    padding: 10px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.055);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+    cursor: pointer;
+    background: var(--black);
+    display: flex;
+    justify-content: space-between;
+}
+
+.Arrow{
+    width: 15px;
+    fill: var(--white);
+    transform: rotate(180deg);
+    transition: all .3s ease-in-out;
+}
+
+.MenuComponent {
+  overflow: hidden;
+}
+
+.up {
+    transform: rotate(0);
+}
+.down {
+    transform: rotate(-180deg);
+}
+
+.active {
+    animation: animOpen .3s ease-in-out forwards;
+}
+
+.disactive {
+    animation: animClose .3s ease-in-out forwards;
+}
+
+.open {
+    max-height: 30vh;
+}
+
+.close {
+    max-height: 0;
+}
+
+.listItem {
+    padding-left: 40px;
+    padding: 8px 8px 8px 40px;
+    font-size: 13px;
+    /* background: var(--black); */
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.637)
+}
+
+.listItem:hover {
+    color: var(--white);
+}
+
+
+@keyframes animOpen {
+    from {background: var(--black);}
+    to { background: hsl(214, 32%, 15%);}
+}
+@keyframes animClose {
+    from {background:#192533; }
+    to { background: var(--black);}
+}

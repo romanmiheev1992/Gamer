@@ -1,0 +1,49 @@
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    height: 60px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    z-index: 40;
+}
+.Header h3 {
+    margin-left: 5px;
+    letter-spacing: 2px;
+}
+.Steam {
+    width: 40px;
+    height: 40px;
+    background: var(--white);
+    /* display: flex;
+    justify-content: start;
+    align-content: center; */
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 50%;
+    align-self: center;
+    transition: all .3s ease-in-out;
+}
+
+.Steam h3 {
+    margin-top: 9px;
+}
+
+.Steam svg {
+    width: 45px;
+    height: 45px;
+}
+
+.headShow {
+    opacity: 1;
+    top: -10px
+}
+
+.headHide {
+    opacity: 0;
+    transform: translateY(-60px);
+}

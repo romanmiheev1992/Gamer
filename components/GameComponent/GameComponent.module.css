@@ -1,0 +1,89 @@
+.GameComponent {
+    margin: 180px auto 0px auto;
+    width: 1000px;
+    /* position: relative; */
+    display: grid;
+    grid-template-areas: "header header "
+                        "slider info"
+                        "smallSlider setting"
+                        "price  setting"
+                        "description description"
+                        ;
+
+    
+}
+
+.GameComponent p {
+    color: rgba(255, 255, 255, 0.877);
+}
+
+.GameComponent h3 {
+    color: rgba(255, 255, 255, 0.877);
+    grid-area: header;
+}
+.SmellSliderWrapper {
+    grid-area: smallSlider;
+    position: relative;
+    width: 600px;
+}
+.GameComponentInfoSection {
+    grid-area: info;
+}
+.PriceBlock {
+    grid-area: price;
+}
+
+.SmallSliderButtonRight {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.SmallSliderButtonLeft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .GameComponent {
+        width: 600px;
+        grid-template-areas:
+                            "header"
+                            "info"     
+                            "slider"   
+                            "smallSlider"                   
+                            "price"
+                            "setting"
+                            "description"
+                            ;
+        justify-content: center;
+                         
+    }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .GameComponent {
+        width: 400px
+                           
+    }
+
+    .GameComponent h3{
+       margin-left: 20px;
+    }
+    .SmellSliderWrapper {
+        width: 400px
+    }
+
+    .SmallSliderButtonLeft {
+        display: none;
+    }
+    .SmallSliderButtonRight{
+         display: none;
+     }
+
+}

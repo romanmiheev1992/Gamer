@@ -1,0 +1,73 @@
+.Search {
+    align-self: center;
+    margin-left: 30px;
+    z-index: 100;
+} 
+
+.Search input {
+    outline: none;
+    height: 20px;
+    width: 150px;
+    transition: all .2s ease-in-out;
+    border-radius: 89px;
+    border: none;
+    padding-left: 13px;
+}
+
+.Search input:focus {
+    width: 200px;
+}
+
+.Search input:hover {
+    outline: 1px solid #fff;
+}
+
+.SeachResult {
+    position: absolute;
+    background-image: linear-gradient(0.25turn, #2a5085, var(--blue-dark));
+    display: flex;
+    flex-direction: column;
+}
+
+.GameBlock {
+    display: flex;
+    width: 300px;
+    margin-top: 5px;
+    cursor: pointer;
+    opacity: .8;
+    font-size: 10px;
+    margin: 5px 10px 0px 5px;
+    border-bottom: 1px solid rgba(82, 82, 82, 0.507);
+    padding-bottom: 5px;
+}
+
+.GameBlock:hover{
+    opacity: 1;
+}
+
+.GameBlock span {
+    margin-left: 5px;
+}
+
+.GameBlock div {
+    display: flex;
+    flex-direction: column;
+}
+
+.GameBlock img {
+    width: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+    .Search {
+        width: 100%
+    }
+
+    .Search input {
+        width: 90%;
+    }
+
+    .Search input:focus {
+        width: 90%;
+    }
+}

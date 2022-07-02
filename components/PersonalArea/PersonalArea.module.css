@@ -1,0 +1,159 @@
+.PersonalArea {
+    width: 1000px;
+    height: 120vh;
+    margin: 0 auto;
+    color: var(--white);
+    position: relative;
+    padding-top: 150px;
+}
+
+.PersonalArea svg {
+    width: 70px;
+    fill: rgba(255, 255, 255, 0.253);
+   
+}
+
+.PersonalAreaBlocks {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 600px 400px;
+    z-index: 10;
+    position: relative;
+}
+
+.PersonalArea h3 {
+    color: var(--white)
+}
+
+.GameBasketBlock {
+    width: 670px;
+    height: 100px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 220px 200px 100px 150px;
+    background: rgba(0, 0, 0, 0.144);
+    border-radius: 10px;
+}
+
+.GameBasketBlock img {
+    width: 200px;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.GameBasketBlock p {
+    color: rgba(255, 255, 255, 0.993);
+    font-size: 13px;
+    align-self: center;
+    margin-left: 15px;
+}
+
+.GameBasketBlock button{
+    justify-self: center;
+    align-self: center;
+    background: none;
+    color: rgba(255, 255, 255, 0.555)
+}
+
+.GameBasketBlock button:hover {
+    background: rgba(255, 255, 255, 0.041);
+    color: #fff
+}
+
+.Enpty {
+    position: absolute;
+    top : 30px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-170%);
+}
+
+.Enpty svg {
+    justify-self: center;
+    margin-left: 30px;
+}
+
+.Enpty p {
+   margin-top: 30px;
+   color:  rgba(255, 255, 255, 0.253);
+}
+
+.PersonalAreaButton {
+    margin-top: 20px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .PersonalArea {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .PersonalAreaBlocks {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 50px;
+    }
+   
+    .GameBasketBlock {
+        width: 100%;
+        grid-template-columns: 200px 130px 90px 150px;
+    }
+
+    .GameBasketBlock img {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .PersonalArea { 
+        width: 100%;
+    }
+    .PersonalArea h3{
+      text-align: center;
+    }
+
+    .PersonalArea h4{
+        text-align: center;
+      }
+
+    .PersonalArea p{
+        text-align: center;
+    }
+    .GameBasketBlock {
+        
+        grid-template-columns: 150px 100px 90px 80px;
+    }
+
+    .Enpty {
+        position: absolute;
+        top : 30px;
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .Enpty svg {
+        justify-self: center;
+        margin-left: 30px;
+    }
+    
+    .Enpty p {
+       margin-top: 30px;
+       color:  rgba(255, 255, 255, 0.253);
+    }
+
+    .GameBasketBlock p{
+        font-size: 10px;
+    }
+
+    .PersonalAreaButton {
+        display: flex;
+        justify-content: space-around
+    }
+
+    .PersonalAreaButton button {
+        align-self: center;
+    }
+}
